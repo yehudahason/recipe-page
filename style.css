@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -15,47 +16,81 @@
   --stone100: hsl(30, 54%, 90%);
   --rose50: hsl(330, 100%, 98%);
   --stone900: hsl(24, 5%, 18%);
+  --text-color: rgb(111, 105, 105);
 }
 body {
   margin: 0;
-  font-family: "Young Serif";
+  font-family: "Young Serif", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
   background-color: var(--stone100);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  height: 250vh;
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 2.5rem;
 }
 ul li {
   margin-bottom: 10px;
 }
 p {
+  font-family: "Outfit";
   display: inline;
-  color: rgb(111, 105, 105);
+  color: var(--text-color);
 }
 
 .container {
-  width: 800px;
+  width: 770px;
   min-height: auto;
-  padding: 32px;
+  padding: 2rem;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .img {
-  width: 820px;
+  width: 706px;
 }
 
 .img img {
   width: 100%;
+  border-radius: 1rem;
+}
+.header {
+  margin: 1.3rem;
+}
+.prepare {
+  font-family: "Outfit";
+  width: 100%;
+  padding: 8px 2rem;
+  background-color: var(--rose50);
+  color: var(--brown2);
+  border-radius: 8px;
+}
+.prepare ul {
+  padding-left: 3rem;
+}
+.prepare ul li {
+  padding-left: 1rem;
+}
+.prepare ul li::marker {
+  color: var(--rose);
+}
+.prepare h3 {
+  color: var(--rose);
+  padding-left: 1.8rem;
+}
+
+.prepare b {
+  font-family: "Outfit";
 }
 .ingred {
   width: 100%;
-  padding: 10px;
+  padding: 1.3rem;
   border-bottom: 1px solid var(--stone100);
 }
 .ingred h2 {
@@ -71,43 +106,74 @@ p {
   color: var(--brown);
 }
 
-.prepare {
+.instruct {
   width: 100%;
-  padding: 8px 16px;
-  background-color: var(--rose50);
+  padding: 1.3rem;
+}
+.instruct b {
+  font-family: "Outfit";
+
   color: var(--brown2);
-  border-radius: 8px;
 }
-.prepare ul {
-  padding-left: 46px;
+.instruct h2 {
+  color: var(--brown);
+  font-size: 2rem;
+  font-weight: 200;
 }
-.prepare ul li {
-  padding-left: 24px;
+.instruct ol {
+  padding-left: 1.3rem;
 }
-.prepare ul li::marker {
-  color: var(--rose);
+.instruct ol li {
+  padding-left: 0.6rem;
+  margin-bottom: 0.6rem;
 }
-.prepare h3 {
-  color: var(--rose);
-  padding-left: 27px;
+.instruct ol li::marker {
+  color: var(--brown);
 }
-.instructed {
+.instruct {
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid var(--stone100);
+}
+.nutrition {
   width: 100%;
+  padding: 1.3rem;
+}
+.nutrition h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--brown);
 }
 table {
+  margin-top: 1rem;
+  width: 100%;
   border-collapse: collapse;
 }
 table tr td {
-  width: 200px;
-  height: 30px;
-  padding: 8px;
+  font-family: "Outfit";
+  width: 50%;
+  height: 2rem;
+  padding: 1rem 2rem;
+  color: var(--text-color);
 }
 
 table td {
   margin: 0;
   border-bottom: 1px solid var(--gray);
 }
+#noborder {
+  border: none;
+}
 table tr td:nth-child(2) {
   font-weight: 800;
   color: var(--brown);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .img {
+    width: 100%;
+  }
 }
