@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  height: 250vh;
+  min-height: auto;
 }
 
 h1 {
@@ -44,6 +44,7 @@ p {
 
 .container {
   width: 770px;
+  margin: 100px;
   min-height: auto;
   padding: 2rem;
   background-color: white;
