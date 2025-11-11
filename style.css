@@ -44,7 +44,7 @@ p {
 
 .container {
   width: 770px;
-  margin: 100px;
+  margin: 120px auto;
   min-height: auto;
   padding: 2rem;
   background-color: white;
