@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --gray: hsl(30, 10%, 34%);
+  --rose: hsl(332, 51%, 32%);
+  --brown: hsl(14, 45%, 36%);
+  --brown2: hsl(14, 66%, 15%);
+
+  --stone150: hsl(30, 18%, 87%);
+  --stone100: hsl(30, 54%, 90%);
+  --rose50: hsl(330, 100%, 98%);
+  --stone900: hsl(24, 5%, 18%);
+}
+body {
+  margin: 0;
+  font-family: "Young Serif";
+  background-color: var(--stone100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 42px;
+}
+ul li {
+  margin-bottom: 10px;
+}
+p {
+  display: inline;
+  color: rgb(111, 105, 105);
+}
+
+.container {
+  width: 800px;
+  min-height: auto;
+  padding: 32px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img {
+  width: 820px;
+}
+
+.img img {
+  width: 100%;
+}
+.ingred {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid var(--stone100);
+}
+.ingred h2 {
+  color: var(--brown);
+  font-size: 30px;
+  font-weight: 200;
+}
+.ingred ul {
+  padding-left: 20px;
+}
+
+.ingred ul li::marker {
+  color: var(--brown);
+}
+
+.prepare {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: var(--rose50);
+  color: var(--brown2);
+  border-radius: 8px;
+}
+.prepare ul {
+  padding-left: 46px;
+}
+.prepare ul li {
+  padding-left: 24px;
+}
+.prepare ul li::marker {
+  color: var(--rose);
+}
+.prepare h3 {
+  color: var(--rose);
+  padding-left: 27px;
+}
+.instructed {
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+}
+table tr td {
+  width: 200px;
+  height: 30px;
+  padding: 8px;
+}
+
+table td {
+  margin: 0;
+  border-bottom: 1px solid var(--gray);
+}
+table tr td:nth-child(2) {
+  font-weight: 800;
+  color: var(--brown);
+}
