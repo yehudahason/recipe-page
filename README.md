@@ -6,7 +6,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Live Site URL: [Github Pages](https://yehudahason.github.io/recipe-page/)
+- My solution at : [Github Pages](https://yehudahason.github.io/recipe-page/)
 
 ### Built with
 
